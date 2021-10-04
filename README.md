@@ -1,1 +1,1 @@
-# group-project-1
+# user-friendly-stack
