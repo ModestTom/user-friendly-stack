@@ -1,17 +1,12 @@
-button {
-    float: right;
-}
-
-#searchbar{
-    
-}
-
 .container {
-    display: flex;
+  display: flex;
 }
-#searchedtext{
 
+#searchbutton {
+  height: 40px;
+  width: 60px;
 }
-#searchbox{
- flex-grow: 2;
+
+#displayquestionthread {
+  display: none;
 }
