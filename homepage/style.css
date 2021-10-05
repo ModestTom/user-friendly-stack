@@ -5,6 +5,20 @@
     font-family:"";
 }
 
+:root {
+    --header_color: #19164F;
+    --navigation: (#ac1bdb);
+}
+
+a:link{
+    color: var(--navigation);
+    margin: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 section{
     display:flex;
     position:relative;
@@ -13,7 +27,8 @@ section{
     align-items:center;
     min-height: 100vh;
 }
-section header {
+
+section header{
     position:absolute;
     top:0;
     width: 100%;
@@ -37,8 +52,31 @@ section header ul li a{
     color: #111;
     font-size: 13px;
 }
+section .main{
+    width:580px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
 
-.searchBox{
-    display:flexbox;
-    flex-wrap: nowrap;
+section .heading{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Bitter', sans-serif;
+    color: var(--header_color);
+}
+
+section .searchBox{
+    position: relative;
+    width: 100%;
+    margin-top:20px;
+}
+
+section .main .searchBox .input{
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    width: 400px;
+    
 }
