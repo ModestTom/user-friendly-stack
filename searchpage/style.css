@@ -1,0 +1,17 @@
+button {
+    float: right;
+}
+
+#searchbar{
+    
+}
+
+.container {
+    display: flex;
+}
+#searchedtext{
+
+}
+#searchbox{
+ flex-grow: 2;
+}
