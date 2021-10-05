@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,18 +13,50 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Project 1</title>
 </head>
+
 <body>
-    <main>
-        <section>
-            <!-- container for search form -->
-            <div>
-                
+    <section>
+        <header>
+            <!-- navigation bar -->
+            <nav>
+                <ul>
+                    <li><a href="#questions">Questions to Stack Overflow</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <div class="heading">
+                <div class="is-size-1 has-text-centered has-text-weight-bold">
+                    EASY STACK
+                </div>
             </div>
-        </section>
+
+
+            <!-- container for search form -->
+            <div class=searchBox>
+                <form>
+                    <div>
+                        <input class="input" id="search_input" type="text" placeholder="Search">
+                        <span class="icon is-large is-left">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <button type="submit" class=searchBtn>Submit</button>
+                    </div>
+                </form>
+            </div>
+    </section>
+
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
