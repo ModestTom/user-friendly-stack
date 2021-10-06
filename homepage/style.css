@@ -7,8 +7,12 @@
 
 :root {
     --header_color: #19164F;
-    --navigation: (#ac1bdb);
+    --navigation: #ac1bdb;
+    --background: #FADBC4;
 }
+
+::selection {
+    background-color: var(--background);
 
 a:link{
     color: var(--navigation);
