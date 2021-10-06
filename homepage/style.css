@@ -1,16 +1,20 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"";
+    font-family: "";
 }
 
 :root {
-    --header_color: #19164F;
-    --navigation: #ac1bdb;
-    --background: #FADBC4;
+    --logo_color: #19164F;
+    --submit: #ac1bdb;
+    --page_back: #F7E9E1;
+    --nav_link: #C0DB12;
+    --nav_back: #56038F;
+    --submit:#12DB00;
 }
 
+<<<<<<< HEAD
 ::selection {
     background-color: var(--background);
 
@@ -21,66 +25,125 @@ a:link {
     font-weight: bold;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+=======
+body {
+    background-color: var(--page_back);
+>>>>>>> 2557c1bbf7ab5bbd3bc059f320fbe100e0ee723a
 }
 
-section{
-    display:flex;
-    position:relative;
-    width:100%;
-    justify-content:center;
-    align-items:center;
-    min-height: 100vh;
-}
-
-section header{
-    position:absolute;
-    top:0;
+section {
+    display: flex;
+    position: relative;
     width: 100%;
-    display:flex;
-    justify-content: flex-end;
-    padding:20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
 }
 
-section header ul{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+header {
+    padding: 15px;
+    background-color: var(--nav_back);
+    height: 60px;
+    align-items: center;
 }
 
-section header ul li{
-    list-style:none;
-    margin-left: 20px;
+nav {
+
+    float: right;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 20px;
 }
 
-section header ul li a{
-    color: #111;
-    font-size: 13px;
+nav a {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
+    color: var(--nav_link);
+    background-image: linear-gradient(270deg, var(--nav_link) 0%, var(--nav_link) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% .2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
 }
-section .main{
-    width:580px;
-    display:flex;
-    flex-direction:column;
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--nav_back);
+}
+
+section .main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-section .heading{
-    font-size: 50px;
+section .heading {
+    font-size: 75px;
     font-weight: bolder;
     font-family: 'Bitter', sans-serif;
     color: var(--header_color);
 }
 
-section .searchBox{
+section .searchBox {
     position: relative;
-    width: 100%;
-    margin-top:20px;
+    align-items: center;
+    height: 600px;
 }
 
-section .main .searchBox .input{
-    padding: 13px;
-    padding-left: 45px;
-    padding-right: 60px;
-    width: 400px;
-    
+
+.input {
+    width: 700px;
+    height: 75px;
+    font-size: 25px;
+    font-family: 'Bitter', sans-serif;
 }
+
+input,
+button {
+    width: 120px;
+    margin: 2% 0;
+    padding: 1%;
+    float: center;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: var(--nav_back);
+    height: 75px;  
+
+}
+  
+  .button_slide {
+    margin-top:20px;
+    color: var(--submit);
+    border: 2px solid var(--nav_back);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 var(--nav_back);
+    transition: ease-out 0.4s;
+    border-radius: 5px;
+  }
+
+  .slide_left:hover {
+    box-shadow: inset 0 0 0 50px var(--nav_back);
+  }
+
+  
+  #submit {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }

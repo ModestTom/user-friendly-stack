@@ -1,3 +1,25 @@
+header{
+  display: none;
+}
+#question-text {
+font-size: 50px;
+height: 120%;
+}
+#question-description{
+  font-size: 24px;
+}
+#accepted-answer {
+
+}
+
+#question-redirect {
+
+}
+:root {
+  --header_color: #19164F;
+  --navigation: #ac1bdb;
+  --background: #FADBC4;
+}
 .container {
   display: flex;
 }
@@ -7,6 +29,6 @@
   width: 60px;
 }
 
-#displayquestionthread {
+#question-list {
   display: none;
 }
