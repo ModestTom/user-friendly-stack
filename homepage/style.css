@@ -91,3 +91,7 @@ section .main .searchBox .input {
     width: 400px;
 
 }
+
+.main{
+    width: 150%;
+}
