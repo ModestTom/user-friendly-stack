@@ -24,6 +24,7 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding:10px;
 }
 
 header {
@@ -63,15 +64,16 @@ nav a:hover {
 }
 
 section .main {
-    width: 580px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 section .heading {
-    font-size: 50px;
+    font-size: 75px;
     font-weight: bolder;
     font-family: 'Bitter', sans-serif;
     color: var(--header_color);
@@ -80,18 +82,27 @@ section .heading {
 section .searchBox {
     position: relative;
     align-items: center;
-    width: 100%;
-    margin-top: 20px;
 }
 
-section .main .searchBox .input {
-    padding: 13px;
-    padding-left: 45px;
-    padding-right: 60px;
-    width: 400px;
 
+.input{
+    width:700px;
+    height: 75px;
+    font-size: 25px;
+    font-family: 'Bitter', sans-serif;
 }
 
-.main{
-    width: 150%;
+input,
+button {
+    width: 120px;
+    margin: 2% 0;
+    padding: 1%;
+    float: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    background-color: var(--nav_back);
+    font-style: italic;
+    height: 50px;
+
 }
