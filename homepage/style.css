@@ -6,12 +6,12 @@
 }
 
 :root {
-    --logo_color: #19164F;
+    --logo_color: #252177;
     --submit: #ac1bdb;
     --page_back: #F7E9E1;
     --nav_link: #C0DB12;
     --nav_back: #56038F;
-    --submit:#12DB00;
+    --submit: #12DB00;
 }
 
 body {
@@ -103,12 +103,12 @@ button {
     font-weight: bold;
     color: whitesmoke;
     background-color: var(--nav_back);
-    height: 75px;  
+    height: 75px;
 
 }
-  
-  .button_slide {
-    margin-top:20px;
+
+.button_slide {
+    margin-top: 20px;
     color: var(--submit);
     border: 2px solid var(--nav_back);
     border-radius: 0px;
@@ -122,15 +122,51 @@ button {
     box-shadow: inset 0 0 0 0 var(--nav_back);
     transition: ease-out 0.4s;
     border-radius: 5px;
-  }
+}
 
-  .slide_left:hover {
+.slide_left:hover {
     box-shadow: inset 0 0 0 50px var(--nav_back);
-  }
+}
 
-  
-  #submit {
+
+#submit {
     width: 364px;
     margin: 50px auto 0 auto;
     text-align: center;
-  }
+}
+
+/* media query for large screen */
+@media (min-width: 1281px) {
+
+    selection,
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* media query desktop */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    selection,
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* media query tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    selection,
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* media query smart phone */
+@media (max-width: 480px) {
+
+    selection,
+    nav {
+        flex-direction: column;
+    }
+}
