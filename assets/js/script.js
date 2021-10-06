@@ -1,6 +1,6 @@
 var homeInput = $('#search_input');
 var searchInput = document.querySelector('#search-box');
-var question = document.querySelector('#question-list')
+var question = document.querySelector('#question-list');
 
 var rootUrl = 'https://api.stackexchange.com/2.3';
 var data = "";
@@ -28,7 +28,8 @@ function displaySearches(data) {
     for (let index = 0; index < data.items.length; index++) {
         var questionTitle = data.items[index].title;
         console.log(questionTitle);
-        //append what need is needed
+        //append titles to question-list section as buttons
+        //create event listener for said buttons to display question details
     };
 };
 
@@ -44,3 +45,5 @@ $("#search-form").submit(function(event) {
     data = $("#searchbox").val();
     getResults(data);
 });
+
+//Create event listener for contact section
