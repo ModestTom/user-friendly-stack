@@ -9,7 +9,7 @@ function getResults(formData) {
     console.log(`${formData} the form data`);
 
     searchResults = `${rootUrl}/search?order=desc&sort=relevance&intitle=${formData}&site=stackoverflow`;
-    
+
     console.log(searchResults);
 
     fetch(searchResults)
