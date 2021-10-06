@@ -20,7 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="searchpage/style.css" />
     <title>Your Search Question</title>
   </head>
   <header>
@@ -75,7 +75,7 @@
       class="container is-flex-wrap-nowrap is-justify-content-center"
     >
       <h1 id="searchedtext" class="title ml-2 mr-2">Searched:</h1>
-      <form>
+      <form id="search-form">
         <input
           id="searchbutton"
           type="submit"
@@ -91,12 +91,55 @@
             style="width: 100%"
           />
         </div>
-        <section id="question-list"></section>
       </form>
     </section>
+    <section id="question-list"></section>
   </header>
   <body>
-    <p class="subtitle">My first website with <strong>Bulma</strong>!</p>
+    <h2 class="title block">NAV BAR GOES here</h2>
+    <h1
+      id="question-text"
+      class="title box is-flex is-justify-content-center mx-6 p-5"
+    >
+      How do I fix this?! Please help me!!!!!!! My homework is due in 10
+      minutes!
+    </h1>
+    <p
+      id="question-description"
+      class="box is-flex is-justify-content-center mx-6 p-5"
+    >
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolore quam
+      natus dolores, ratione facilis provident explicabo sint perspiciatis ad
+      eum eligendi aut, minus assumenda, fuga officiis et nisi consequuntur!
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolore quam
+      natus dolores, ratione facilis provident explicabo sint perspiciatis ad
+      eum eligendi aut, minus assumenda, fuga officiis et nisi consequuntur!
+    </p>
+    <h2
+      id="accepted-answer"
+      class="title box is-flex is-justify-content-center mx-6 p-5"
+    >
+      Accepted Answer!!!
+    </h2>
+    <p
+      id="question-description"
+      class="box is-flex is-justify-content-center mx-6 p-5"
+    >
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolore quam
+      natus dolores, ratione facilis provident explicabo sint perspiciatis ad
+      eum eligendi aut, minus assumenda, fuga officiis et nisi consequuntur!
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolore quam
+      natus dolores, ratione facilis provident explicabo sint perspiciatis ad
+      eum eligendi aut, minus assumenda, fuga officiis et nisi consequuntur!
+    </p>
+    <h3
+      id="question-redirect"
+      class="title box is-flex is-justify-content-center"
+    >
+      Didnt help? Click
+      <a class="mx-2" href="https://stackoverflow.com/">HERE</a> to keep
+      searching
+    </h3>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

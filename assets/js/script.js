@@ -1,18 +1,15 @@
 var homeInput = $('#search_input');
+var searchInput = document.querySelector('#search-box');
 var question = document.querySelector('#question-list')
 
-var searchInput = document.querySelector('#search-box');
-var searchForm = document.querySelector('#search-form');
-
 var rootUrl = 'https://api.stackexchange.com/2.3';
-
-var homeData = "";
+var data = "";
 
 function getResults(formData) {
     console.log(`${formData} the form data`);
 
     searchResults = `${rootUrl}/search?order=desc&sort=relevance&intitle=${formData}&site=stackoverflow`;
-    
+
     console.log(searchResults);
 
     fetch(searchResults)
@@ -35,14 +32,15 @@ function displaySearches(data) {
     };
 };
 
-$("#home-form").submit(function(event) {
+$("#home_form").submit(function(event) {
     event.preventDefault();
-    homeData = $("#search_input").val();
-    console.log(homeData);
-    getResults(homeData);
-    
+    data = $("#search_input").val();
+    console.log(data);
+    getResults(data);
 });
 
-$(searchForm).submit(function(event) {
-// copy layout of home form
+$("#search-form").submit(function(event) {
+    event.preventDefault();
+    data = $("#searchbox").val();
+    getResults(data);
 });
