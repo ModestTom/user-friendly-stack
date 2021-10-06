@@ -13,44 +13,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&family=Montserrat:wght@600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="homepage\style.css" />
     <title>Project 1</title>
 </head>
 
 <body>
+
+    <header>
+        <!-- navigation bar -->
+        <nav>
+            <a href="#questions">Questions to Stack Overflow</a></li>
+            <a href="#about">About</a></li>
+            <a href="#contact">Contact</a></li>
+        </nav>
+    </header>
+
     <section>
-        <header>
-            <!-- navigation bar -->
-            <nav>
-                <ul>
-                    <li><a href="#questions">Questions to Stack Overflow</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-
         <div class="main">
             <!-- heading -->
             <h1 class="heading">EASY STACK</h1>
 
             <!-- container for search form -->
-            <div class=searchBox>
-                <form>
-                    <input class="input" id="search_input" type="text" placeholder="Search">
-                    <i class="fas fa-search"></i>
-                    <button type="submit" class=searchBtn>Submit</button>
-            </div>
+
+            <form class="control  has-icons-left">
+
+                <div class="searchBox has-icons-left">
+                    <input class="input is-large type=" text="text" placeholder="Search Your Coding Question Here!">
+                    <span class="icon is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+
             </form>
+
         </div>
     </section>
 
-    </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="assets\js\script.js"></script>
 </body>
 
 </html>
