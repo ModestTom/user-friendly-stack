@@ -14,7 +14,7 @@
 ::selection {
     background-color: var(--background);
 
-a:link{
+a:link {
     color: var(--navigation);
     margin: 10px;
     text-decoration: underline;
