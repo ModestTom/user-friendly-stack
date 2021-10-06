@@ -14,21 +14,8 @@
     --submit:#12DB00;
 }
 
-<<<<<<< HEAD
-::selection {
-    background-color: var(--background);
-
-a:link {
-    color: var(--navigation);
-    margin: 10px;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-=======
 body {
     background-color: var(--page_back);
->>>>>>> 2557c1bbf7ab5bbd3bc059f320fbe100e0ee723a
 }
 
 section {
