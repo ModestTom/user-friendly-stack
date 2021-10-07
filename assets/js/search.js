@@ -24,25 +24,36 @@ function displaySearches() {
     data = JSON.parse(data);
     console.log(data);
     var questionList = $("#question-list");
-    console.log(questionList);
     questionList.append("<h3>Questions</h3>");
     for (let index = 0; index < data.items.length; index++) {
-        console.log("For loop");
-        console.log(data.items.length);
+        //console.log(data.items[index]);
         var questionTitle = data.items[index].title;
         var questionId = data.items[index].question_id;
-        var question = $(`<button id="${questionId}">`)
+        var question = $(`<button class="question-button" id="${questionId}">`)
         $(question).text(questionTitle);
         $("#question-list").append(question);
-
-        //TODO: append titles to question-list section as buttons
-        //TODO: create event listener for said buttons to display question details
     };
+    console.log($("#question-list"));
 };
+
+function displayQuestions(title, id) {
+    console.log(title);
+    console.log(id);
+};
+
+//TODO: event listener for buttons to display info when clicked (FIX IT)
+$(".question-button").click(function() {
+    console.log("Testing please work");
+    var qTitle = $(this).text();
+    console.log(qTitle);
+    var qId = $(this).attr("id");
+    console.log(qId);
+    displayQuestions(qTitle, qId);
+});
 
 $("#search-form").submit(function(event) {
     event.preventDefault();
-    data = $("#searchbox").val();
+    data = $("#search-input").val();
     getResults(data);
 });
 
