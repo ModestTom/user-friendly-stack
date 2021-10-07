@@ -4,14 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hello Bulma!</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css">
+
     <link
       rel="stylesheet"
       href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -24,77 +26,32 @@
     <title>Your Search Question</title>
   </head>
   <header>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+    <nav class="header">
+      <a href="#questions">Questions to Stack Overflow</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+  </nav>
+</header>
+</main>
+<section>
+  <div class="main">
+      <!-- heading -->
+      <h1 class="heading">EASY STACK</h1>
 
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item"> Home </a>
+      <!-- container for search form -->
+<!-- REMEMBER TO CHANGE IDS IF ITS GOING TO MESS WITH JS-->
+      <form class="control has-icons-left" id="search-form">
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link"> More </a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item"> About </a>
-              <a class="navbar-item"> Jobs </a>
-              <a class="navbar-item"> Contact </a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item"> Report an issue </a>
-            </div>
+          <div class="searchBox has-icons-left">
+              <input id="search-input" class="input is-large type=" text="text" placeholder="🔎Search Your Coding Question Here!">
+              <div class="button_slide slide_left" id="button">SEARCH</div>
           </div>
-        </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <a class="navbar-item">Questions for Stack Overflow</a>
-          </div>
-          <div class="navbar-item">
-            <a class="navbar-item">About</a>
-          </div>
-          <div class="navbar-item">
-            <a class="navbar-item">Contact Us</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <section
-      id="searchbar"
-      class="container is-flex-wrap-nowrap is-justify-content-center"
-    >
-      <h1 id="searchedtext" class="title ml-2 mr-2">Searched:</h1>
-      <form id="search-form">
-        <input
-          id="searchbutton"
-          type="submit"
-          value="Search"
-          style="float: right"
-        />
-        <div style="overflow: hidden; padding-right: 0.5em">
-          <input
-            id="searchbox"
-            class="input"
-            type="text"
-            placeholder="Search a new question"
-            style="width: 100%"
-          />
-        </div>
-        <section id="displayquestionthread">Question Title</section>
       </form>
-    </section>
-  </header>
+
+  </div>
+</section>
+    <section id="question-list"></section>
+  </main>
   <body>
     <h2 class="title block">NAV BAR GOES here</h2>
     <h1
