@@ -24,57 +24,18 @@
     <title>Your Search Question</title>
   </head>
   <header>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item"> Home </a>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link"> More </a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item"> About </a>
-              <a class="navbar-item"> Jobs </a>
-              <a class="navbar-item"> Contact </a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item"> Report an issue </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <a class="navbar-item">Questions for Stack Overflow</a>
-          </div>
-          <div class="navbar-item">
-            <a class="navbar-item">About</a>
-          </div>
-          <div class="navbar-item">
-            <a class="navbar-item">Contact Us</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
+    <nav class="header">
+      <a href="#questions">Questions to Stack Overflow</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+  </nav>
+</header>
+</main>
     <section
       id="searchbar"
       class="container is-flex-wrap-nowrap is-justify-content-center"
     >
-      <h1 id="searchedtext" class="title ml-2 mr-2">Searched:</h1>
+      <h1 id="searchedtext" class="title ml-2 mr-2">Search:</h1>
       <form id="search-form">
         <input
           id="searchbutton"
@@ -94,9 +55,8 @@
       </form>
     </section>
     <section id="question-list"></section>
-  </header>
+  </main>
   <body>
-    <h2 class="title block">NAV BAR GOES here</h2>
     <h1
       id="question-text"
       class="title box is-flex is-justify-content-center mx-6 p-5"
@@ -143,5 +103,5 @@
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/search.js"></script>
 </html>

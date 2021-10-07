@@ -1,9 +1,68 @@
-header{
-  display: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "";
+}
+
+:root {
+  --logo_color: #252177;
+  --submit: #ac1bdb;
+  --page_back: #F7E9E1;
+  --nav_link: #C0DB12;
+  --nav_back: #56038F;
+  --submit: #12DB00;
+}
+
+header {
+    padding: 15px;
+    background-color: var(--nav_back);
+    height: 60px;
+    align-items: center;
+}
+
+nav {
+  float: right;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  padding-right: 20px;
+}
+
+nav a {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 20px;
+  color: var(--nav_link);
+  background-image: linear-gradient(270deg, var(--nav_link) 0%, var(--nav_link) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% .2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+}
+
+nav a:hover {
+  background-size: 100% 100%;
+  color: var(--nav_back);
+}
+
+main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+body{
+  background-color: var(--page_back);
 }
 #question-text {
 font-size: 50px;
-height: 120%;
 }
 #question-description{
   font-size: 24px;
@@ -15,11 +74,7 @@ height: 120%;
 #question-redirect {
 
 }
-:root {
-  --header_color: #19164F;
-  --navigation: #ac1bdb;
-  --background: #FADBC4;
-}
+
 .container {
   display: flex;
 }
@@ -27,4 +82,40 @@ height: 120%;
 #searchbutton {
   height: 40px;
   width: 60px;
+}
+
+@media (min-width: 1281px) {
+
+  selection,
+  nav {
+      flex-direction: column;
+  }
+}
+
+/* media query desktop */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  selection,
+  nav {
+      flex-direction: column;
+  }
+}
+
+
+/* media query tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  selection,
+  nav {
+      flex-direction: column;
+  }
+}
+
+/* media query smart phone */
+@media (max-width: 480px) {
+
+  selection,
+  nav {
+      flex-direction: column;
+  }
 }
