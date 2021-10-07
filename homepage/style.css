@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "";
+
 }
 
 :root {
@@ -64,6 +64,7 @@ nav a:hover {
     color: var(--nav_back);
 }
 
+/* body of document */
 section .main {
     width: 50%;
     display: flex;
@@ -80,11 +81,17 @@ section .heading {
     color: var(--header_color);
 }
 
+/* search box that you submit the question to */
+.control{
+    width: 600px;
+}
+
 section .searchBox {
     position: relative;
     align-items: center;
     height: 600px;
 }
+
 
 /* submit button styling */
 .button_slide {
@@ -109,10 +116,12 @@ section .searchBox {
 }
 
 
-#submit {
-    width: 364px;
+#button {
+    width: 200px;
     margin: 50px auto 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -124,26 +133,6 @@ footer{
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     
-}
-.fHeading{
-    font-size: 40px;
-}
-
-.fab {  
-    width: 70px;
-    padding: 20px;
-    font-size: 25px;
-    text-decoration: none;
-    margin: 5px 2px;
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    justify-content: space-between;
-  }
-
-  .fa:hover {
-      opacity: 0.7;
-  }
 
 
 
