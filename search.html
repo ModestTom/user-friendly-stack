@@ -4,14 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hello Bulma!</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css">
+
     <link
       rel="stylesheet"
       href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -31,32 +33,28 @@
   </nav>
 </header>
 </main>
-    <section
-      id="searchbar"
-      class="container is-flex-wrap-nowrap is-justify-content-center"
-    >
-      <h1 id="searchedtext" class="title ml-2 mr-2">Search:</h1>
-      <form id="search-form">
-        <input
-          id="searchbutton"
-          type="submit"
-          value="Search"
-          style="float: right"
-        />
-        <div style="overflow: hidden; padding-right: 0.5em">
-          <input
-            id="searchbox"
-            class="input"
-            type="text"
-            placeholder="Search a new question"
-            style="width: 100%"
-          />
-        </div>
+<section>
+  <div class="main">
+      <!-- heading -->
+      <h1 class="heading">EASY STACK</h1>
+
+      <!-- container for search form -->
+<!-- REMEMBER TO CHANGE IDS IF ITS GOING TO MESS WITH JS-->
+      <form class="control has-icons-left" id="search-form">
+
+          <div class="searchBox has-icons-left">
+              <input id="search-input" class="input is-large type=" text="text" placeholder="🔎Search Your Coding Question Here!">
+              <div class="button_slide slide_left" id="button">SEARCH</div>
+          </div>
       </form>
-    </section>
+
+  </div>
+</section>
     <section id="question-list"></section>
   </main>
   <body>
+    <section id="question-details">
+    <h2 class="title block">NAV BAR GOES here</h2>
     <h1
       id="question-text"
       class="title box is-flex is-justify-content-center mx-6 p-5"
@@ -100,6 +98,7 @@
       <a class="mx-2" href="https://stackoverflow.com/">HERE</a> to keep
       searching
     </h3>
+    </section>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
