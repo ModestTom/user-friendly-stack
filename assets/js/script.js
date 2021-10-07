@@ -1,16 +1,12 @@
 var homeInput = $('#search_input');
 var searchInput = document.querySelector('#search-box');
-var question = document.querySelector('#question-list')
 
 var rootUrl = 'https://api.stackexchange.com/2.3';
 var data = "";
 
 function getResults(formData) {
-    console.log(`${formData} the form data`);
 
     searchResults = `${rootUrl}/search?order=desc&sort=relevance&intitle=${formData}&site=stackoverflow`;
-
-    console.log(searchResults);
 
     fetch(searchResults)
         .then(function (response) {
@@ -23,18 +19,26 @@ function getResults(formData) {
 };
 
 function displaySearches(data) {
-    document.location.href = "search.html";
+    window.location.href = "/search.html";
     console.log(data.items);
-    for (let index = 0; index < data.items.length; index++) {
+    $("#questions").children("h3").text("Questions");
+    console.log($("#questions").children("h3").text);
+    /*for (let index = 0; index < data.items.length; index++) {
         var questionTitle = data.items[index].title;
-        console.log(questionTitle);
-        //append what need is needed
-    };
+        var questionId = data.items[index].question_id;
+        var question = $(`<div id="${questionId}">`)
+        $("#question-list").text("Questions");
+        $(question).text(questionTitle);
+        $("#question-list").append(question);
+
+        //TODO: append titles to question-list section as buttons
+        //TODO: create event listener for said buttons to display question details
+    };*/
 };
 
 $("#home_form").submit(function(event) {
     event.preventDefault();
-    data = $("#search_input").val();
+    data = $("#home_input").val();
     console.log(data);
     getResults(data);
 });
@@ -44,3 +48,5 @@ $("#search-form").submit(function(event) {
     data = $("#searchbox").val();
     getResults(data);
 });
+
+//Create event listener for contact section
