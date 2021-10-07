@@ -18,16 +18,6 @@ body {
     background-color: var(--page_back);
 }
 
-section {
-    display: flex;
-    position: relative;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 10px;
-}
-
 header {
     padding: 15px;
     background-color: var(--nav_back);
@@ -64,14 +54,55 @@ nav a:hover {
     color: var(--nav_back);
 }
 
+.title{
+    font-size: 50px;
+}
+
+.titleCont {
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Bitter', sans-serif;
+    color: var(--header_color);
+}
+
+
 /* body of document */
 section .main {
-    width: 50%;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+    display: flex;
+}
+
+section .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+#main {
+    height: 75%;
+}
+
+#aboutMe {
+    margin: 20px;
+    justify-content: center;
+}
+
+#contact{
+    /* display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; */
+}
+
+.box{
+    width: 600px;
 }
 
 section .heading {
@@ -82,7 +113,7 @@ section .heading {
 }
 
 /* search box that you submit the question to */
-.control{
+.control {
     width: 600px;
 }
 
@@ -126,50 +157,50 @@ section .searchBox {
 
 
 /* footer styling */
-footer{
+footer {
     background-color: var(--nav_back);
     color: white;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
-    
 
 
 
 
-/* media query for large screen */
-@media (min-width: 1281px) {
 
-    selection,
-    nav {
-        flex-direction: column;
+    /* media query for large screen */
+    @media (min-width: 1281px) {
+
+        selection,
+        nav {
+            flex-direction: column;
+        }
     }
-}
 
-/* media query desktop */
-@media (min-width: 1025px) and (max-width: 1280px) {
+    /* media query desktop */
+    @media (min-width: 1025px) and (max-width: 1280px) {
 
-    selection,
-    nav {
-        flex-direction: column;
+        selection,
+        nav {
+            flex-direction: column;
+        }
     }
-}
 
 
-/* media query tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
+    /* media query tablet */
+    @media (min-width: 768px) and (max-width: 1024px) {
 
-    selection,
-    nav {
-        flex-direction: column;
+        selection,
+        nav {
+            flex-direction: column;
+        }
     }
-}
 
-/* media query smart phone */
-@media (max-width: 480px) {
+    /* media query smart phone */
+    @media (max-width: 480px) {
 
-    selection,
-    nav {
-        flex-direction: column;
+        selection,
+        nav {
+            flex-direction: column;
+        }
     }
-}
