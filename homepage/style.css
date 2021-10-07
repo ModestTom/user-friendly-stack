@@ -2,16 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "";
+
 }
 
 :root {
-    --logo_color: #19164F;
+    --logo_color: #252177;
     --submit: #ac1bdb;
     --page_back: #F7E9E1;
     --nav_link: #C0DB12;
     --nav_back: #56038F;
-    --submit:#12DB00;
+    --submit: #12DB00;
 }
 
 body {
@@ -64,6 +64,7 @@ nav a:hover {
     color: var(--nav_back);
 }
 
+/* body of document */
 section .main {
     width: 50%;
     display: flex;
@@ -80,6 +81,11 @@ section .heading {
     color: var(--header_color);
 }
 
+/* search box that you submit the question to */
+.control{
+    width: 600px;
+}
+
 section .searchBox {
     position: relative;
     align-items: center;
@@ -87,28 +93,9 @@ section .searchBox {
 }
 
 
-.input {
-    width: 700px;
-    height: 75px;
-    font-size: 25px;
-    font-family: 'Bitter', sans-serif;
-}
-
-input,
-button {
-    width: 120px;
-    margin: 2% 0;
-    padding: 1%;
-    float: center;
-    font-weight: bold;
-    color: whitesmoke;
-    background-color: var(--nav_back);
-    height: 75px;  
-
-}
-  
-  .button_slide {
-    margin-top:20px;
+/* submit button styling */
+.button_slide {
+    margin-top: 20px;
     color: var(--submit);
     border: 2px solid var(--nav_back);
     border-radius: 0px;
@@ -122,15 +109,67 @@ button {
     box-shadow: inset 0 0 0 0 var(--nav_back);
     transition: ease-out 0.4s;
     border-radius: 5px;
-  }
+}
 
-  .slide_left:hover {
+.slide_left:hover {
     box-shadow: inset 0 0 0 50px var(--nav_back);
-  }
+}
 
-  
-  #submit {
-    width: 364px;
+
+#button {
+    width: 200px;
     margin: 50px auto 0 auto;
     text-align: center;
-  }
+    display: flex;
+    justify-content: center;
+}
+
+
+/* footer styling */
+footer{
+    background-color: var(--nav_back);
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    
+
+
+
+
+/* media query for large screen */
+@media (min-width: 1281px) {
+
+    selection,
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* media query desktop */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    selection,
+    nav {
+        flex-direction: column;
+    }
+}
+
+
+/* media query tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    selection,
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* media query smart phone */
+@media (max-width: 480px) {
+
+    selection,
+    nav {
+        flex-direction: column;
+    }
+}
