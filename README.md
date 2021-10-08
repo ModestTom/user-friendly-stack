@@ -30,7 +30,7 @@ The ***Easy Stack*** uses 2 API's: [Stack Exchange](https://api.stackexchange.co
 
 ## Demo()
 
-![User Friendly Stack](assets\user_friendly_stack.gif)
+![User Friendly Stack](assets/user_friendly_stack.gif)
 
 ## Websites
 
