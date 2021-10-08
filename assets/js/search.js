@@ -2,7 +2,7 @@ var rootUrl = 'https://api.stackexchange.com/2.3';
 
 function getResults(formData) {
 
-    searchResults = `${rootUrl}/search?order=desc&sort=relevance&intitle=${formData}&site=stackoverflow`;
+    var searchResults = `${rootUrl}/search?order=desc&sort=relevance&intitle=${formData}&site=stackoverflow`;
 
     fetch(searchResults)
         .then(function (response) {
@@ -20,39 +20,43 @@ function getResults(formData) {
 };
 
 function displaySearches() {
-    var data = localStorage.getItem("questions");
-    data = JSON.parse(data);
+    var data = JSON.parse(localStorage.getItem("questions"));
     console.log(data);
     var questionList = $("#question-list");
-    questionList.append("<h3>Questions</h3>");
+    var questionButton = $(".question-button");
     for (let index = 0; index < data.items.length; index++) {
-        //console.log(data.items[index]);
         var questionTitle = data.items[index].title;
-        var questionId = data.items[index].question_id;
-        var question = $(`<button class="question-button" id="${questionId}">`)
-        $(question).text(questionTitle);
-        $("#question-list").append(question);
+        questionButton[index].setAttribute("id", index);
+        $(questionButton[index]).text(questionTitle);
+        $(questionList).append(questionButton[index]);
     };
-    console.log($("#question-list"));
 };
 
-function displayQuestions(title, id) {
-    console.log(title);
-    console.log(id);
+function fetchQuestions(title, id) {
+    $("#question-text").text(title);
+    var data = JSON.parse(localStorage.getItem("questions"));
+    console.log(data.items[id]);
+    var answerId = data.items[id].accepted_answer_id;
+    var answerLink = `https://stackoverflow.com/a/${answerId}`;
+    var questionLink = data.items[id].link;
+    console.log(questionLink);
+    console.log(answerLink);
+    $("#question-description").append(`<a target="_blank" href="${questionLink}" >${questionLink}</a>`);
+    $("#answer-description").append(`<a target="_blank" href="${answerLink}" >${answerLink}</a>`);
 };
 
-//TODO: event listener for buttons to display info when clicked (FIX IT)
 $(".question-button").click(function() {
-    console.log("Testing please work");
+    $("#question-list").attr("style", "display: none");
+    $("#question-details").attr("style", "display: block");
     var qTitle = $(this).text();
-    console.log(qTitle);
     var qId = $(this).attr("id");
-    console.log(qId);
-    displayQuestions(qTitle, qId);
+    fetchQuestions(qTitle, qId);
 });
 
 $("#search-form").submit(function(event) {
     event.preventDefault();
+    $("#question-details").attr("style", "display: none");
+    $("#question-list").attr("style", "display: flex");
     data = $("#search-input").val();
     getResults(data);
 });

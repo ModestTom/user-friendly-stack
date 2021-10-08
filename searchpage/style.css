@@ -117,6 +117,10 @@ section .searchBox {
   display: flex;
   justify-content: center;
 }
+
+#question-details {
+  display: none;
+}
 /*
 
 #searchedtext {
