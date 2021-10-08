@@ -52,5 +52,3 @@ $("#home_form").submit(function(event) {
     getResults(data);
 });
 
-//TODO: Submit handler for contact section
-
