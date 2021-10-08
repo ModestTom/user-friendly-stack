@@ -199,8 +199,9 @@ footer {
 }
 
 
-
-
+.searchMain{
+height: 60%;
+}
 
 /* search answers buttons */
 #question-list{
