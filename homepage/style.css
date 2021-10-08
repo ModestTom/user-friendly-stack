@@ -175,9 +175,13 @@ section .about {
     width:100%;
 }
 
-.submitCancel{
+.contactBtn{
     display:flex;
     align-items: center;
+}
+
+.submit {
+    margin-right:5px;
 }
 
 
