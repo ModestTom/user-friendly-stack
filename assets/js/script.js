@@ -2,8 +2,13 @@ function get_joke_of_the_day() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
 	 if (this.readyState == 4 && this.status == 200) {
-        console.log(this.responseText);
-	    //TODO: append to homepage
+        var jokeData = JSON.parse(this.responseText);
+        var jokeOTD = jokeData.contents.jokes;
+        console.log(jokeOTD);
+        $("#search").after('<div class="joke" id="joke-of-the-day"></div>');
+        $("#joke-of-the-day").append(`<h2>${jokeOTD[0].description}</h2>`);
+        $("#joke-of-the-day").append(`<h3>${jokeOTD[0].joke.title}</h3>`);
+        $("#joke-of-the-day").append(`<p>${jokeOTD[0].joke.text}</p>`);
 	 }
     };
     xhttp.open("GET", "https://api.jokes.one/jod?category=animal", true);
