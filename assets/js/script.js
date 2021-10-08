@@ -1,4 +1,19 @@
-//TODO: Incorporate JokesAPI
+function get_joke_of_the_day() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+	 if (this.readyState == 4 && this.status == 200) {
+        console.log(this.responseText);
+	    //TODO: append to homepage
+	 }
+    };
+    xhttp.open("GET", "https://api.jokes.one/jod?category=animal", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.setRequestHeader("X-JokesOne-Api-Secret", "YOUR API HERE");
+    xhttp.send();
+}
+
+get_joke_of_the_day()
+
 var homeInput = $('#search_input');
 var searchInput = document.querySelector('#search-box');
 
@@ -32,4 +47,5 @@ $("#home_form").submit(function(event) {
     getResults(data);
 });
 
-//Create event listener for contact section
+//TODO: Submit handler for contact section
+
