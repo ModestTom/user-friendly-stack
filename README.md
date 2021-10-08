@@ -16,6 +16,7 @@ The ***Easy Stack*** uses 2 API's: [Stack Exchange](https://api.stackexchange.co
   
 * Search Page/Results:
     * Provides 30 possible responses to the question in an easy to use format.
+    * When you click on the possible answer, it will send you to the answer location in Stack Overflow
 
  
 
