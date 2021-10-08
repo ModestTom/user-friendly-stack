@@ -56,7 +56,7 @@ $(".question-button").click(function() {
 $("#search-form").submit(function(event) {
     event.preventDefault();
     $("#question-details").attr("style", "display: none");
-    $("#question-list").attr("style", "display: flex");
+    $("#question-list").attr("style", "display: block");
     data = $("#search-input").val();
     getResults(data);
 });
