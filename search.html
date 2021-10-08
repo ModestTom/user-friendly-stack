@@ -1,125 +1,163 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&family=Montserrat:wght@600&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css">
 
-    <link
-      rel="stylesheet"
-      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="searchpage/style.css" />
-    <title>Your Search Question</title>
-  </head>
-  <header>
-    <nav class="header">
-      <a href="#questions">Questions to Stack Overflow</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <!-- bulma link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&family=Montserrat:wght@600&display=swap"
+    rel="stylesheet" />
+  <!-- Your preferred icon library here -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
+  <!-- Import all social provider styles from Bulma-Social -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css" />
+  <link rel="stylesheet" href="homepage\style.css" />
+  <title>EASY STACK search</title>
+</head>
+
+<header>
+  <nav class="header">
+    <a href="http://www.stackoverflow.com/questions/ask" target=”_blank”>Questions to Stack Overflow</a>
+    <a href="index.html" target=”_blank”>About</a>
+    <a href="index.html" target=”_blank”>Contact</a>
   </nav>
 </header>
 </main>
 <section>
   <div class="main">
-      <!-- heading -->
-      <h1 class="heading">EASY STACK</h1>
+    <!-- heading -->
+    <h1 class="heading">EASY STACK</h1>
 
-      <!-- container for search form -->
-<!-- REMEMBER TO CHANGE IDS IF ITS GOING TO MESS WITH JS-->
-      <form class="control has-icons-left" id="search-form">
+    <!-- container for search form -->
+    <!-- REMEMBER TO CHANGE IDS IF ITS GOING TO MESS WITH JS-->
+    <form class="control has-icons-left" id="search-form">
 
-          <div class="searchBox has-icons-left">
-              <input id="search-input" class="input is-large type=" text="text" placeholder="🔎Search Your Coding Question Here!">
-              <div class="button_slide slide_left" id="button">SEARCH</div>
-          </div>
-      </form>
+      <div class="searchBox has-icons-left">
+        <input id="search-input" class="input is-large type=" text="text"
+          placeholder="🔎Search Your Coding Question Here!">
+        <div class="button_slide slide_left" id="button">SEARCH</div>
+      </div>
+    </form>
 
   </div>
 </section>
-    <section id="question-list">
-      <h3>Questions</h3>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-      <button class="question-button"></button>
-    </section>
-  </main>
-  <body>
-    <div id="question-details">
-    <h1
-      id="question-text"
-      class="title box is-flex is-justify-content-center mx-6 p-5"
-    >
-      How do I fix this?! Please help me!!!!!!! My homework is due in 10
-      minutes!
+<section id="question-list" class="column is-8 is-offset-one-fifth">
+  <p class="title">Questions</p>
+  <ul>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+    <li><span><button class="question-button"></button></span></li>
+  </ul>
+</section>
+</main>
+
+<body>
+  <div id="question-details">
+    <h1 id="question-text" class="title box is-flex is-justify-content-center mx-6 p-5">
+
     </h1>
-    <p
-      id="question-description"
-      class="box is-flex is-justify-content-center mx-6 p-5"
-    >
+    <p id="question-description" class="box is-flex is-justify-content-center mx-6 p-5">
     </p>
-    <h2
-      id="accepted-answer"
-      class="title box is-flex is-justify-content-center mx-6 p-5"
-    >
-      Accepted Answer!!!
+    <h2 id="accepted-answer" class="title box is-flex is-justify-content-center mx-6 p-5">
+
     </h2>
-    <p
-      id="answer-description"
-      class="box is-flex is-justify-content-center mx-6 p-5"
-    >
+    <p id="answer-description" class="box is-flex is-justify-content-center mx-6 p-5">
+
     </p>
-    <h3
-      id="question-redirect"
-      class="title box is-flex is-justify-content-center"
-    >
-      Didnt help? Click
-      <a class="mx-2" href="https://stackoverflow.com/">HERE</a> to keep
+    <h3 id="question-redirect" class="title box is-flex is-justify-content-center">
+      Didn't help? Click
+      <a class="mx-2" href="http://www.stackoverflow.com/questions/ask">HERE</a> to keep
       searching
     </h3>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <p class="fHeading">The 50/50 Club</p>
+    <h4>
+      Designed by Meredith Coyne, Thomas Spaeth, Chris Hage, and Sheralyn
+      Files
+    </h4>
+    <div>
+      <!-- facebook icon -->
+      <a class="button is-medium is-facebook" href="https://www.facebook.com" target="_blank">
+        <span class="icon">
+          <i class="fab fa-facebook fa-md"></i>
+        </span>
+      </a>
+
+      <!-- github icon -->
+      <a class="button is-medium is-github" href="https://www.github.com" target="_blank">
+        <span class="icon">
+          <i class="fab fa-github fa-lg"></i>
+        </span>
+      </a>
+
+      <!-- instagram icon -->
+      <a class="button is-medium is-instagram" href="https://www.instagram.com" target="_blank">
+        <span class="icon">
+          <i class="fab fa-instagram fa-lg"></i>
+        </span>
+      </a>
+
+      <!-- youtube icon -->
+      <a class="button is-medium is-youtube" href="https://www.youtube.com" target="_blank">
+        <span class="icon">
+          <i class="fab fa-youtube fa-lg"></i>
+        </span>
+      </a>
+
+      <!-- twitter icon -->
+      <a class="button is-medium is-twitter" href="https://www.twitter.com" target="_blank">
+        <span class="icon">
+          <i class="fab fa-twitter fa-lg"></i>
+        </span>
+      </a>
     </div>
-  </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="./assets/js/search.js"></script>
+
+    <div>
+      <p>Copyright &copy; The 50/50 Club</p>
+    </div>
+  </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="assets\js\script.js"></script>
 </html>
