@@ -64,6 +64,7 @@ section .main {
     justify-content: center;
     position: relative;
     display: flex;
+    height: 900px;
 }
 
 section .heading {
@@ -288,4 +289,10 @@ li:hover span {
 
 .container {
     display: flex;
+}
+
+/* joke */
+.joke{
+height: 300px;
+text-align: center;
 }
