@@ -2,7 +2,7 @@ var rootUrl = 'https://api.stackexchange.com/2.3';
 
 function getResults(formData) {
 
-    searchResults = `${rootUrl}/search?order=desc&sort=relevance&intitle=${formData}&site=stackoverflow`;
+    var searchResults = `${rootUrl}/search?order=desc&sort=relevance&intitle=${formData}&site=stackoverflow`;
 
     fetch(searchResults)
         .then(function (response) {
@@ -20,29 +20,44 @@ function getResults(formData) {
 };
 
 function displaySearches() {
-    var data = localStorage.getItem("questions");
-    data = JSON.parse(data);
+    var data = JSON.parse(localStorage.getItem("questions"));
     console.log(data);
     var questionList = $("#question-list");
-    console.log(questionList);
-    questionList.append("<h3>Questions</h3>");
+    var questionButton = $(".question-button");
     for (let index = 0; index < data.items.length; index++) {
-        console.log("For loop");
-        console.log(data.items.length);
         var questionTitle = data.items[index].title;
-        var questionId = data.items[index].question_id;
-        var question = $(`<button id="${questionId}">`)
-        $(question).text(questionTitle);
-        $("#question-list").append(question);
-
-        //TODO: append titles to question-list section as buttons
-        //TODO: create event listener for said buttons to display question details
+        questionButton[index].setAttribute("id", index);
+        $(questionButton[index]).text(questionTitle);
+        $(questionList).append(questionButton[index]);
     };
 };
 
+function fetchQuestions(title, id) {
+    $("#question-text").text(title);
+    var data = JSON.parse(localStorage.getItem("questions"));
+    console.log(data.items[id]);
+    var answerId = data.items[id].accepted_answer_id;
+    var answerLink = `https://stackoverflow.com/a/${answerId}`;
+    var questionLink = data.items[id].link;
+    console.log(questionLink);
+    console.log(answerLink);
+    $("#question-description").append(`<a target="_blank" href="${questionLink}" >${questionLink}</a>`);
+    $("#answer-description").append(`<a target="_blank" href="${answerLink}" >${answerLink}</a>`);
+};
+
+$(".question-button").click(function() {
+    $("#question-list").attr("style", "display: none");
+    $("#question-details").attr("style", "display: block");
+    var qTitle = $(this).text();
+    var qId = $(this).attr("id");
+    fetchQuestions(qTitle, qId);
+});
+
 $("#search-form").submit(function(event) {
     event.preventDefault();
-    data = $("#searchbox").val();
+    $("#question-details").attr("style", "display: none");
+    $("#question-list").attr("style", "display: flex");
+    data = $("#search-input").val();
     getResults(data);
 });
 

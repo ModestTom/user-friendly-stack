@@ -1,3 +1,4 @@
+//TODO: Incorporate JokesAPI
 var homeInput = $('#search_input');
 var searchInput = document.querySelector('#search-box');
 
