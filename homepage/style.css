@@ -197,3 +197,202 @@ footer {
 }
 
 
+html {
+    box-sizing: border-box;
+  }
+  * {
+    box-sizing: inherit;
+  }
+
+:root {
+    --logo_color: #252177;
+    --submit: #ac1bdb;
+    --page_back: #F7E9E1;
+    --nav_link: #C0DB12;
+    --nav_back: #56038F;
+    --submit: #12DB00;
+}
+
+body {
+    background-color: var(--page_back);
+    
+}
+
+header {
+    padding: 15px;
+    background-color: var(--nav_back);
+    height: 60px;
+    align-items: center;
+}
+
+/* navigation bar */
+nav {
+
+    float: right;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 20px;
+}
+
+nav a {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
+    color: var(--nav_link);
+    background-image: linear-gradient(270deg, var(--nav_link) 0%, var(--nav_link) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% .2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--nav_back);
+}
+
+/* search section of document */
+section .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+section .heading {
+    font-size: 75px;
+    font-weight: bolder;
+    font-family: 'Bitter', sans-serif;
+    color: var(--header_color);
+}
+
+/* search box that you submit the question to */
+.control {
+    width: 600px;
+}
+
+section .searchBox {
+    position: relative;
+    align-items: center;
+    height: 600px;
+}
+
+
+/* submit button styling */
+.button_slide {
+    margin-top: 20px;
+    color: var(--submit);
+    border: 2px solid var(--nav_back);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 var(--nav_back);
+    transition: ease-out 0.4s;
+    border-radius: 5px;
+}
+
+.slide_left:hover {
+    box-shadow: inset 0 0 0 50px var(--nav_back);
+}
+
+
+#button {
+    width: 200px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* about section */
+section .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.titleCont {
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Bitter', sans-serif;
+    color: var(--header_color);
+}
+
+#aboutMe {
+    margin: 20px;
+    justify-content: center;
+}
+
+.aboutTitle{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    margin-bottom: 300px;
+}
+
+.aboutDescrip {
+    width: 600px;
+    background-color: var(--page_back);
+    font-style: bold;
+    border:5px solid var(--nav_link);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* contact section */
+#contact {
+    position: relative;
+    align-items: center;
+    background-color: var(--page_back);
+    border:5px solid var(--nav_link);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+}
+
+.field{
+    width:100%;
+}
+
+.contactBtn{
+    display:flex;
+    align-items: center;
+}
+
+.submit {
+    margin-right:5px;
+}
+
+
+
+/* footer styling */
+footer {
+    background-color: var(--nav_back);
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+
+}
+
+
