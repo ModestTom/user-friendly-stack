@@ -14,12 +14,10 @@ The ***Easy Stack*** uses 2 API's: [Stack Exchange](https://api.stackexchange.co
       * a link that sends you to the *Contact* page that allows you to ask us questions or add comments
       * One Joke a day is also provided on the screen for your enjoyment!
   
-* Search Page:
-    * Provides
+* Search Page/Results:
+    * Provides 30 possible responses to the question in an easy to use format.
 
-* Results Page:
-  *  Provides a result in 
-  *  
+ 
 
 ## Features
 
