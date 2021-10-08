@@ -1,19 +1,24 @@
-User Friendly Stack
-=====================
-The _Easy Stack_ [Stack Exchange](https://openweathermap.org/api). 
+**User Friendly Stack**
+=======================
+The ***Easy Stack*** uses 2 API's: [Stack Exchange](https://api.stackexchange.com/)  &  [Jokes One](https://jokes.one/api/joke/) . 
 
 ## Functionality
 
-* xxxx
-  
-* When searching Easy Stack:
-  *  
-  
-
-
-  
 * Website offers the ability to have cleaner interface when viewing Stack Overflow questions and responses. The website also offers the ability to submit a question to Stack Overflow if what you are looking for is not found. Lastly, incase you are too stress from trying to problem solve your coding concerns, we provide a joke to give you a chuckle!
   
+* Homepage:
+  *  Allows you to search through an API of Stack Overflow
+  *  A navigation bar at the top of the page can redirect you to three offers. The nav bar is available on all pages:
+      * a link to Stack Overflow that allows you to ask questions when you can't find your answer.
+      * a link that sends you to the *About* ***Easy Stack***
+      * a link that sends you to the *Contact* page that allows you to ask us questions or add comments
+* Search Page:
+    * Provides
+
+* Results Page:
+  *  Provides a result in 
+  *  One Joke a day is also provided on the screen for your enjoyment!
+
 ## Features
 
 * HTML
@@ -22,7 +27,7 @@ The _Easy Stack_ [Stack Exchange](https://openweathermap.org/api).
 * jQuery
 * Server-Side API - Stack Exchange & Jokes.1
 
-## Demo
+## Demo()
 
 ![User Friendly Stack](assets\user_friendly_stack.gif)
 
