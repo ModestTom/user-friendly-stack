@@ -64,7 +64,7 @@ section .main {
     justify-content: center;
     position: relative;
     display: flex;
-    height: 900px;
+    height: 700px;
 }
 
 section .heading {
@@ -289,11 +289,12 @@ li:hover span {
 /* joke */
 .joke{
 font-size: 20px;
+margin: auto auto;
 padding: 20px;
 text-align: center;
 border: 5px solid var(--nav_link);
 border-radius: 5px;
-margin-bottom: 500px;
+margin-bottom: 300px;
 width:60%;
 height:auto;
 display: block;
