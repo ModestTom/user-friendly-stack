@@ -52,7 +52,7 @@ The ***Easy Stack*** uses 2 API's: [Stack Exchange](https://api.stackexchange.co
 ## Contact
 
 Meredith Coyne - meredithleigh.coyne@gmail.com
-Thomas Spaeth - 
+Thomas Spaeth - thoams.spaeth01@gmail.com
 Chris Hage -  
 Sheralyn Files - 
 
