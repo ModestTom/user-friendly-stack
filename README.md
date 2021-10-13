@@ -54,7 +54,7 @@ The ***Easy Stack*** uses 2 API's: [Stack Exchange](https://api.stackexchange.co
 Meredith Coyne - meredithleigh.coyne@gmail.com
 Thomas Spaeth - thoams.spaeth01@gmail.com
 Chris Hage -  
-Sheralyn Files - 
+Sheralyn Files - gired0329@yahoo.com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
